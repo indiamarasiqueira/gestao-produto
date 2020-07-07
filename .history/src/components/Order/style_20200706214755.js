@@ -16,6 +16,7 @@ export const OrderListItem = styled.div`
     border-top-width: 0;
   }
 
+  
 `;
 export const OrderDate = styled.p`
   color: #707070;
@@ -58,7 +59,6 @@ export const ButtonOutline = styled.div`
   svg {
     margin-right: 8px;
   }
-  
 `;
 export const OrderAll = styled.button`
   color: #6E7D9D;

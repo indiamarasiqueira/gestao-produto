@@ -41,7 +41,7 @@ export const MainMenu = styled.div`
    @media all and (min-width: 600px) {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     display: flex;
-    width: 418px;
+    flex: 1;
     flex-direction: column;
     height: 100%;
     position: fixed;

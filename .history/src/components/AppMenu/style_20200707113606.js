@@ -41,12 +41,12 @@ export const MainMenu = styled.div`
    @media all and (min-width: 600px) {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     display: flex;
-    width: 418px;
+    align-items: start;
+    justify-content: start;
     flex-direction: column;
+    width: 400px;
     height: 100%;
     position: fixed;
-    font-size: 16px;
-    margin-top: 30px;
   }
 `;
 
@@ -61,10 +61,14 @@ export const UserInfoEmail = styled.p``;
 // Menu
 export const MenuList = styled.nav`
     @media all and (min-width: 600px) {
-    
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
     width: 400px;
     height: 100%;
-  
+    position: fixed;
   }
 `;
 

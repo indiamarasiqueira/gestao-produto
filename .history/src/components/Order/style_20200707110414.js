@@ -29,7 +29,7 @@ export const OrderId = styled.p`
 `;
 export const OrderBox = styled.div`
 
-  @media all and (min-width: 600px){
+  @media all and (min-width: 500px){
     display: flex;
     align-items: center;
   }

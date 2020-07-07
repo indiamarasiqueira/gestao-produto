@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import { useHistory } from "react-router-dom";
 
 import MenuIcon from "@material-ui/icons/Menu";
@@ -8,10 +8,9 @@ import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import CloseIcon from "@material-ui/icons/Close";
 
-import ModalMenu from "../ModalMenu/index";
+import ModalMenu from '../ModalMenu/index';
 
 import {
-  MenuMain,
   Button,
   BoxIcon,
   MainMenu,
@@ -20,7 +19,7 @@ import {
   UserInfoEmail,
   MenuList,
   MenuListItem,
-  MenuIconImage,
+  MenuIconImage
 } from "./style";
 
 const AppMenu = () => {
@@ -29,10 +28,10 @@ const AppMenu = () => {
   const navigate = (route) => {
     history.push(route);
     showModal(false);
-  };
-
+  }
+  
   return (
-    <MenuMain>
+    <Fragment>
       <Button onClick={() => showModal(!show)}>
         <BoxIcon>{show ? <CloseIcon /> : <MenuIcon />}</BoxIcon>
         menu
@@ -71,7 +70,7 @@ const AppMenu = () => {
           </MenuList>
         </MainMenu>
       </ModalMenu>
-    </MenuMain>
+    </Fragment>
   );
 };
 export default AppMenu;

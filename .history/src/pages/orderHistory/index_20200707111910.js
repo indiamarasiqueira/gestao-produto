@@ -1,6 +1,6 @@
-import React, {  useState } from "react";
+import React, { Fragment, useState } from "react";
 
-import { OrderMenu} from "./style";
+import { OrderMenu, MenuApp } from "./style";
 
 import AppMenu from '../../components/AppMenu'
 import AlertCovid from "../../components/AlertCovid";
@@ -21,9 +21,9 @@ const OrderHistory = () => {
 
   return (
     <OrderMenu>
-      <div>
+      <MenuApp>
         <AppMenu />
-      </div>
+      </MenuApp>
       <div>
         <AlertCovid />
         <HeaderTitle>HISTÓRICO DE PEDIDOS</HeaderTitle>

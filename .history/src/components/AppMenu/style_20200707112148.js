@@ -2,6 +2,22 @@ import styled from "styled-components";
 
 export const MenuMain = styled.button`
   
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%;
+
+  @media all and (max-width: 1250px) {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 100%;
+    padding: 10px;
+  }
+  
+  
 `;
 export const Button = styled.button`
   display: flex;
@@ -37,17 +53,6 @@ export const MainMenu = styled.div`
   right: 0;
   bottom: 0;
   background: #fff;
-
-   @media all and (min-width: 600px) {
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-    display: flex;
-    width: 418px;
-    flex-direction: column;
-    height: 100%;
-    position: fixed;
-    font-size: 16px;
-    margin-top: 30px;
-  }
 `;
 
 // User
@@ -60,11 +65,12 @@ export const UserInfoName = styled.p`
 export const UserInfoEmail = styled.p``;
 // Menu
 export const MenuList = styled.nav`
-    @media all and (min-width: 600px) {
-    
-    width: 400px;
+    @media all and (max-width: 1250px) {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
     height: 100%;
-  
+    padding: 10px;
   }
 `;
 

@@ -15,7 +15,7 @@ export const OrderListItem = styled.div`
   &:first-of-type {
     border-top-width: 0;
   }
-
+  
 `;
 export const OrderDate = styled.p`
   color: #707070;

@@ -1,36 +1,33 @@
-import React, {  useState } from "react";
-
-import { OrderMenu} from "./style";
+import React, { Fragment, useState } from "react";
 
 import AppMenu from '../../components/AppMenu'
-import AlertCovid from "../../components/AlertCovid";
-import HeaderTitle from "../../components/HeaderTitle";
 import BoxSearch from "../../components/BoxSearch/index";
+import HeaderTitle from "../../components/HeaderTitle";
 import Order from "../../components/Order/index";
 
+import { MenuMain }  from './style'
 
 const OrderHistory = () => {
-  const [value, setValue] = useState("");
-  const [query, setQuery] = useState("");
+  const [value, setValue] = useState('');
+  const [query, setQuery] = useState('');
   const handleChange = (e) => setValue(e.target.value);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setQuery(value);
-  };
+  }
 
   return (
-    <OrderMenu>
+    <MenuMain>
       <div>
         <AppMenu />
       </div>
       <div>
-        <AlertCovid />
         <HeaderTitle>HISTÓRICO DE PEDIDOS</HeaderTitle>
         <BoxSearch value={value} handleChange={handleChange} handleSubmit={handleSubmit} />
         <Order query={query} />
       </div>
-    </OrderMenu>
+    </MenuMain>
   );
 };
 export default OrderHistory;

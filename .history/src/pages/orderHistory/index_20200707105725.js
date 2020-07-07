@@ -1,6 +1,6 @@
-import React, {  useState } from "react";
+import React, { Fragment, useState } from "react";
 
-import { OrderMenu} from "./style";
+import { OrderMenu } from "./style";
 
 import AppMenu from '../../components/AppMenu'
 import AlertCovid from "../../components/AlertCovid";

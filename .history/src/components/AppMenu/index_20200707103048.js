@@ -8,7 +8,7 @@ import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import CloseIcon from "@material-ui/icons/Close";
 
-import ModalMenu from "../ModalMenu/index";
+import ModalMenu from '../ModalMenu/index';
 
 import {
   MenuMain,
@@ -20,7 +20,7 @@ import {
   UserInfoEmail,
   MenuList,
   MenuListItem,
-  MenuIconImage,
+  MenuIconImage
 } from "./style";
 
 const AppMenu = () => {
@@ -29,8 +29,8 @@ const AppMenu = () => {
   const navigate = (route) => {
     history.push(route);
     showModal(false);
-  };
-
+  }
+  
   return (
     <MenuMain>
       <Button onClick={() => showModal(!show)}>

@@ -1,6 +1,6 @@
-import React, {  useState } from "react";
+import React, { Fragment, useState } from "react";
 
-import { OrderMenu} from "./style";
+import { OrderMenu } from "./style";
 
 import AppMenu from '../../components/AppMenu'
 import AlertCovid from "../../components/AlertCovid";
@@ -21,15 +21,11 @@ const OrderHistory = () => {
 
   return (
     <OrderMenu>
-      <div>
-        <AppMenu />
-      </div>
-      <div>
-        <AlertCovid />
-        <HeaderTitle>HISTÓRICO DE PEDIDOS</HeaderTitle>
-        <BoxSearch value={value} handleChange={handleChange} handleSubmit={handleSubmit} />
-        <Order query={query} />
-      </div>
+      <AppMenu />
+      <AlertCovid />
+      <HeaderTitle>HISTÓRICO DE PEDIDOS</HeaderTitle>
+      <BoxSearch value={value} handleChange={handleChange} handleSubmit={handleSubmit} />
+      <Order query={query} />
     </OrderMenu>
   );
 };

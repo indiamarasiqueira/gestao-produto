@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const MenuMain = styled.button`
+
+  
   
 `;
 export const Button = styled.button`
@@ -20,7 +22,6 @@ export const Button = styled.button`
     color: #7281A0;
     background: #F4F4F4;
   }
-
 `;
 export const BoxIcon = styled.div`
   display: inline-block;
@@ -38,15 +39,14 @@ export const MainMenu = styled.div`
   bottom: 0;
   background: #fff;
 
-   @media all and (min-width: 600px) {
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  @media all and ( max-width: 1250px) {
     display: flex;
-    width: 418px;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
     height: 100%;
-    position: fixed;
-    font-size: 16px;
-    margin-top: 30px;
+    padding: 10px;
   }
 `;
 
@@ -59,14 +59,7 @@ export const UserInfoName = styled.p`
 `;
 export const UserInfoEmail = styled.p``;
 // Menu
-export const MenuList = styled.nav`
-    @media all and (min-width: 600px) {
-    
-    width: 400px;
-    height: 100%;
-  
-  }
-`;
+export const MenuList = styled.nav``;
 
 export const MenuListItem = styled.a`
   display: flex;

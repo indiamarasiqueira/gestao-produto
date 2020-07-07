@@ -14,8 +14,7 @@ export const OrderListItem = styled.div`
 
   &:first-of-type {
     border-top-width: 0;
-  }
-
+  }  
 `;
 export const OrderDate = styled.p`
   color: #707070;
@@ -28,11 +27,7 @@ export const OrderId = styled.p`
   font-weight: bold;
 `;
 export const OrderBox = styled.div`
-
-  @media all and (min-width: 600px){
-    display: flex;
-    align-items: center;
-  }
+  max-width: 800px;
 `;
 export const OrderInfo = styled.div`
   flex: 1;

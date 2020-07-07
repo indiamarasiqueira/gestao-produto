@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 export const MenuMain = styled.button`
-  
+  @media all and (min-width: 600px) {
+    flex-direction: column;
+    height: 100%;
+    background: none;
+    border: none;
+  }
 `;
 export const Button = styled.button`
   display: flex;

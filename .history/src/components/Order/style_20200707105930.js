@@ -16,6 +16,7 @@ export const OrderListItem = styled.div`
     border-top-width: 0;
   }
 
+  
 `;
 export const OrderDate = styled.p`
   color: #707070;
