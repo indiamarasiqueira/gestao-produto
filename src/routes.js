@@ -4,7 +4,6 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import GenericPage from "./pages/generic";
 import AppMenu from "./components/AppMenu";
 import OrderHistory from "./pages/orderHistory";
-import HeaderTitle from "./components/HeaderTitle";
 import AlertCovid from "./components/AlertCovid";
 
 export default function Routes() {
