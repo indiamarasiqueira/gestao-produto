@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import HeaderTitle from '../../components/HeaderTitle';
+import { Link } from 'react-router-dom'
 
 import { MainPage } from "./style";
 
@@ -13,7 +14,7 @@ const GenericPage = ({ title }) => {
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book.
           </p>
-          <a href="/pedidos">ir para histórico de pedidos</a>
+          <Link to="/pedidos">ir para histórico de pedidos</Link>
         </MainPage>
       </Fragment>
     );
