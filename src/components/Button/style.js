@@ -8,7 +8,7 @@ export const BtnPrimary = styled.button`
   background-color: ${colors.greenLight};
   color: ${colors.white};
   height: 52px;
-  padding: 8px 16px;
+  padding: ${layout.gapSmall}px ${layout.gap}px;
   font-size: 1rem;
   text-align: center;
 
@@ -22,7 +22,7 @@ export const BtnOutline = styled.button`
   background-color: transparent;
   color: ${colors.secundary};
   height: 52px;
-  padding: ${layout.gap}px;
+  padding: ${layout.gapSmall}px ${layout.gap}px;
   font-size: 1rem;
   text-align: center;
   display: flex;

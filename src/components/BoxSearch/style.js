@@ -15,6 +15,7 @@ export const InputText = styled.input`
   border-radius: 5px;
   border: 1px solid ${colors.secundary};
   font-size: 16px;
+  padding-left: ${layout.gapSmall}px;
 
   ::placeholder {
     color: ${colors.secundary};
