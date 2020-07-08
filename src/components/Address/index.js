@@ -1,18 +1,18 @@
 import React from "react";
 
-import AddressItem from './item';
+import AddressItem from "./item";
+import userAddress from "../../data/address.json";
 
-import {
-  AddressList,
-  AddressListItem,
-} from "./style";
+import { AddressList, AddressListItem } from "./style";
 
 const Address = () => {
   return (
     <AddressList>
-      <AddressListItem>
-        <AddressItem />
-      </AddressListItem>
+      {userAddress.data.map((user) => (
+        <AddressListItem>
+          <AddressItem user={user} />
+        </AddressListItem>
+      ))}
     </AddressList>
   );
 };

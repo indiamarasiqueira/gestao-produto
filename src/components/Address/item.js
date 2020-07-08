@@ -7,20 +7,20 @@ import ButtonPrimary from "../Button/primary";
 
 import { AddressContainer, AddressHeader, AddressUser, AddressTitle, BtnEdit, AddressInfo } from "./style";
 
-const AddressItem = () => {
+const AddressItem = ({ user }) => {
   return (
     <Fragment>
       <AddressContainer>
         <AddressHeader>
-          <AddressTitle>COMERCIAL</AddressTitle>
+          <AddressTitle>{user.title}</AddressTitle>
           <BtnEdit>EDITAR</BtnEdit>
         </AddressHeader>
         <AddressUser>
-          <TextGroup title="nome:" value="Caroline Melinda W Efftign" />
-          <TextGroup title="destinatário:" value="Caroline Melinda W Efftign" />
+          <TextGroup title="nome:" value={user.name} />
+          <TextGroup title="destinatário:" value={user.recipient} />
         </AddressUser>
         <AddressInfo>
-          <TextGroup title="endereço:" value="Rua Edmundo Goldacker, 45 - Casa Fortaleza, Blumenau - SC - 89056540 " />
+          <TextGroup title="endereço:" value={user.address} />
         </AddressInfo>
 
         <FieldRadio label="endereço padrão" name="endereco" />

@@ -39,12 +39,14 @@ export const AddressHeader = styled.div`
 `;
 export const AddressTitle = styled.h3`
   color: #7281a0;
+  text-transform: uppercase;
 `;
 export const BtnEdit = styled.button`
   color: #61c5c0;
   border: none;
   background: none;
   font-size: 1rem;
+  text-decoration: underline;
 
   :hover {
     color: #258984;
