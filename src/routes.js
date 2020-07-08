@@ -4,9 +4,9 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import GenericPage from "./pages/generic";
 import AppMenu from "./components/AppMenu";
 import OrderHistory from "./pages/orderHistory";
-import { MainApp, MainLayout } from './style'
-import Address from './pages/address'
-import Profile from './pages/profile'
+import { MainApp, MainLayout } from "./style";
+import Address from "./pages/address";
+import Profile from "./pages/profile";
 
 export default function Routes() {
   return (
