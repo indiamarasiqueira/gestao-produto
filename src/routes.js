@@ -4,20 +4,24 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import GenericPage from "./pages/generic";
 import AppMenu from "./components/AppMenu";
 import OrderHistory from "./pages/orderHistory";
-import AlertCovid from "./components/AlertCovid";
+import { MainApp, MainLayout } from "./style";
+import Address from "./pages/address";
+import Profile from "./pages/profile";
 
 export default function Routes() {
   return (
     <BrowserRouter>
-      <AppMenu />
-      <AlertCovid />
-      
-      <Switch>
-        <Route path="/perfil" exact component={() => <GenericPage title="Meu Perfil" />} />
-        <Route path="/localizacao" exact component={() => <GenericPage title="Meus endereços" />} />
-        <Route path="/favoritos" exact component={() => <GenericPage title="Lista de favoritos" />} />
-        <Route path={["/", "/pedidos"]} exact component={OrderHistory} />
-      </Switch>
+      <MainApp>
+        <AppMenu />
+        <MainLayout>
+          <Switch>
+            <Route path={["/", "/pedidos"]} exact component={OrderHistory} />
+            <Route path="/perfil" exact component={Profile} />
+            <Route path="/favoritos" exact component={() => <GenericPage title="Lista de favoritos" />} />
+            <Route path="/localizacao" exact component={Address} />
+          </Switch>
+        </MainLayout>
+      </MainApp>
     </BrowserRouter>
   );
 }
