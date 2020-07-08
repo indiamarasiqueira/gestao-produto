@@ -14,8 +14,16 @@ export const Button = styled.button`
   transition: all 0.2s ease-out;
   height: 48px;
 
+  ${(props) =>
+    props.active &&
+    css`
+      position: fixed;
+      top: 0;
+      left: 0;
+    `}
+
   :hover {
-    color: ${colors.primary};
+    color: ${colors.secundary};
     background: ${colors.white};
   }
 
@@ -31,7 +39,7 @@ export const BoxIcon = styled.div`
 export const MainMenu = styled.div`
   color: ${colors.grey};
   padding-left: ${layout.gap}px;
-  margin-bottom: ${layout.gap}px;
+  padding-bottom: ${layout.gap}px;
   border-right: 1px solid rgba(0, 0, 0, 0.3);
 
   @media all and (max-width: ${breakpoints.mobileMenu}px) {
@@ -41,13 +49,12 @@ export const MainMenu = styled.div`
     right: 0;
     bottom: 0;
     background: ${colors.white};
-
     display: ${(props) => (props.open ? "block" : "none")};
   }
 
   @media all and (min-width: ${breakpoints.mobileMenu}px) {
     padding-left: ${layout.gapLarge}px;
-    margin-top: ${layout.gap}px;
+    margin: ${layout.gap}px 0;
   }
 `;
 

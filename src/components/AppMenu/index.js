@@ -31,7 +31,7 @@ const AppMenu = () => {
 
   return (
     <Fragment>
-      <Button onClick={() => showModal(!show)}>
+      <Button onClick={() => showModal(!show)} active={show}>
         <BoxIcon>{show ? <CloseIcon /> : <MenuIcon />}</BoxIcon>
         menu
       </Button>

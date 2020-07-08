@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import { layout } from "../../styles/variable";
+import { layout, colors } from "../../styles/variable";
 
 // Main Page
 export const Alert = styled.div`
-  background: #f9f9f9;
+  background: ${colors.blueLight};
   padding: ${layout.gap}px;
+
   font-size: 14px;
 `;

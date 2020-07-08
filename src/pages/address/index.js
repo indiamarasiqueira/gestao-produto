@@ -8,7 +8,6 @@ const AddressPage = () => {
   return (
     <Fragment>
       <HeaderTitle>MEUS ENDEREÇOS</HeaderTitle>
-
       <PageContent>
         <AddressList />
       </PageContent>

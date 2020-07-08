@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { breakpoints } from "../styles/variable";
+import { breakpoints, colors } from "../styles/variable";
 
 export const MainApp = styled.div`
-  border: 1px solid #d8d8d8;
-  background-color: #fff;
+  border: 1px solid ${colors.greyLight};
+  background-color: ${colors.white};
 
   @media all and (min-width: ${breakpoints.mobileMenu}px) {
     display: grid;
