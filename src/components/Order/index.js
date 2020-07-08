@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import orderData from '../../db.json'
+import ButtonOutline from '../Button/outline'
 
 import {
   Empty,
@@ -12,7 +13,6 @@ import {
   OrderBox,
   OrderInfo,
   OrderStatus,
-  ButtonOutline,
   OrderAll,
 } from "./style";
 
@@ -54,6 +54,7 @@ const Order = ({query}) => {
                 Forma de pagamento: <b>{item.payment}</b>
               </p>
             </OrderInfo>
+          
             <ButtonOutline>
               <VisibilityIcon />
               Ver Detalhes

@@ -7,6 +7,7 @@ export const Empty = styled.div`
 `;
 export const OrderList = styled.div`
   padding: 0 16px;
+
 `;
 export const OrderListItem = styled.div`
   padding: 32px 0;
@@ -28,7 +29,7 @@ export const OrderId = styled.p`
   font-weight: bold;
 `;
 export const OrderBox = styled.div`
-
+  max-width: 700px;
   @media all and (min-width: 600px){
     display: flex;
     align-items: center;
