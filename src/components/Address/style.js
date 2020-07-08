@@ -13,6 +13,7 @@ export const AddressListItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-bottom: 32px;
 `;
 
 export const AddressBox = styled.div`

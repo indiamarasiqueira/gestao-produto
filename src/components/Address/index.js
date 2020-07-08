@@ -8,8 +8,8 @@ import { AddressList, AddressListItem } from "./style";
 const Address = () => {
   return (
     <AddressList>
-      {userAddress.data.map((user) => (
-        <AddressListItem>
+      {userAddress.data.map((user, key) => (
+        <AddressListItem key={key}>
           <AddressItem user={user} />
         </AddressListItem>
       ))}

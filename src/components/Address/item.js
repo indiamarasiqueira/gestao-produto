@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 
-import HeaderTitle from "../HeaderTitle";
 import TextGroup from "../TextGroup";
 import FieldRadio from "../FieldRadio";
 import ButtonPrimary from "../Button/primary";
