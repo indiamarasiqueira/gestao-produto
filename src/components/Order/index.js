@@ -1,20 +1,10 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import orderData from "../../data/order.json";
 import ButtonOutline from "../Button/outline";
 
-import {
-  Empty,
-  OrderList,
-  OrderListItem,
-  OrderDate,
-  OrderId,
-  OrderBox,
-  OrderInfo,
-  OrderStatus,
-  OrderAll,
-} from "./style";
+import { Empty, OrderListItem, OrderDate, OrderId, OrderBox, OrderInfo, OrderStatus, OrderAll } from "./style";
 
 const findOrder = (detail, query) => {
   const list = orderData.data;
@@ -37,7 +27,7 @@ const Order = ({ query }) => {
   }
 
   return (
-    <OrderList>
+    <Fragment>
       {list.map((item, key) => (
         <OrderListItem key={key}>
           <OrderDate>{item.date}</OrderDate>
@@ -62,7 +52,7 @@ const Order = ({ query }) => {
         </OrderListItem>
       ))}
       {!detail && <OrderAll onClick={setDetail}>Ver todos os pedidos</OrderAll>}
-    </OrderList>
+    </Fragment>
   );
 };
 export default Order;

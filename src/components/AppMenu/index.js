@@ -35,7 +35,6 @@ const AppMenu = () => {
         <BoxIcon>{show ? <CloseIcon /> : <MenuIcon />}</BoxIcon>
         menu
       </Button>
-
       <MainMenu open={show}>
         <UserInfo>
           <UserInfoName>Caroline Melinda W Effting</UserInfoName>

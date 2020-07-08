@@ -1,16 +1,17 @@
 import React, { Fragment } from "react";
 
 import HeaderTitle from "../../components/HeaderTitle";
-import AddressList from '../../components/Address'
-import { AddressBox } from "./style";
+import AddressList from "../../components/Address";
+import { PageContent } from "../../components/Core";
 
 const AddressPage = () => {
   return (
     <Fragment>
       <HeaderTitle>MEUS ENDEREÇOS</HeaderTitle>
-      <AddressBox>
+
+      <PageContent>
         <AddressList />
-      </AddressBox>
+      </PageContent>
     </Fragment>
   );
 };

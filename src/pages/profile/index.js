@@ -2,18 +2,19 @@ import React, { Fragment } from "react";
 
 import HeaderTitle from "../../components/HeaderTitle";
 import ProfileItem from "./item";
-import ButtonOutline from '../../components/Button/outline'
+import { PageContent } from "../../components/Core";
+import ButtonOutline from "../../components/Button/outline";
 
-import { MenuProfile, ProfileDesciption, ButtonGroup } from "./style";
-
+import { ProfileDesciption, ButtonGroup } from "./style";
 
 const ProfilePage = () => {
   return (
     <Fragment>
       <HeaderTitle>MEU PERFIL</HeaderTitle>
-      <MenuProfile>
+
+      <PageContent>
         <ProfileDesciption>
-          Seja bem vindo a sua área. Nesse espaço você poderá editar e visualizar todas as informações relacionadas ao
+          seja bem vindo a sua área. Nesse espaço você poderá editar e visualizar todas as informações relacionadas ao
           seu cadastro.
         </ProfileDesciption>
         <ProfileItem />
@@ -22,10 +23,9 @@ const ProfilePage = () => {
           <ButtonOutline>Alterar senha</ButtonOutline>
           <ButtonOutline>Alterar e-mail</ButtonOutline>
         </ButtonGroup>
-      </MenuProfile>
+      </PageContent>
     </Fragment>
   );
 };
 
 export default ProfilePage;
- 

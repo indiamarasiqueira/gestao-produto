@@ -4,15 +4,16 @@
       "id": "001011",
       "date": "08/jun/2020 às 08:56",
       "title": "Pagamento Efetuado",
+      "Confirmed": "Pedido Realizado",
       "description": "Pedido não entregue à transportadora.",
       "price": "547,80",
       "payment": "Cartão de crédito"
-      
     },
     {
       "id": "001012",
       "date": "06/jun/2020 às 12:46",
       "title": "Pagamento Efetuado",
+      "Confirmed": "Pedido Realizado",
       "description": "Pedido não entregue à transportadora.",
       "price": "200,32",
       "payment": "Cartão de débito"
@@ -21,6 +22,7 @@
       "id": "001013",
       "date": "04/jun/2020 às 09:30",
       "title": "Pagamento Efetuado",
+      "Confirmed": "Pedido Realizado",
       "description": "Pedido não entregue à transportadora.",
       "price": "150,60",
       "payment": "Cartão de crédito"
@@ -29,10 +31,10 @@
       "id": "001014",
       "date": "29/mai/2020 às 17:30",
       "title": "Pagamento Efetuado",
+      "Confirmed": "Pedido Realizado",
       "description": "Pedido não entregue à transportadora.",
       "price": "83,58",
       "payment": "Cartão de débito"
     }
   ]
- 
 }

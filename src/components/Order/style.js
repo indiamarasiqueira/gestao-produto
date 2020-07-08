@@ -1,69 +1,64 @@
 import styled from "styled-components";
 
+import { colors, breakpoints, layout } from "../../styles/variable";
+
 export const Empty = styled.div`
-  padding: 16px;
-  color: #ccc;
+  padding: ${layout.gap}px;
+  color: ${colors.greenLight};
   text-align: center;
 `;
-export const OrderList = styled.div`
-  padding: 0 16px;
-
-`;
 export const OrderListItem = styled.div`
-  padding: 32px 0;
+  padding: ${layout.gapLarge}px 0;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 
   &:first-of-type {
     border-top-width: 0;
   }
-
 `;
 export const OrderDate = styled.p`
-  color: #707070;
+  color: ${colors.grey};
   font-size: 16px;
 `;
 export const OrderId = styled.p`
-  padding-top: 6px;
-  color: #7281a0;
+  padding-top: ${layout.gapSmall}px;
+  color: ${colors.primary};
   font-size: 22px;
   font-weight: bold;
 `;
 export const OrderBox = styled.div`
   max-width: 700px;
-  @media all and (min-width: 600px){
+  @media all and (min-width: ${breakpoints.mobile}px) {
     display: flex;
     align-items: center;
   }
 `;
 export const OrderInfo = styled.div`
   flex: 1;
-  margin: 16px 0;
-  color: #707070;
-
+  margin: ${layout.gap}px 0;
+  color: ${colors.grey};
 `;
 export const OrderStatus = styled.p`
-  color: #61c5c0;
-  margin-bottom: 4px;
+  color: ${colors.greenLight};
+  margin-bottom: ${layout.gapSmall}px;
   font-weight: bold;
 `;
 export const ButtonOutline = styled.div`
   border-radius: 5px;
-  border: 1px solid #6e7d9d;
+  border: 1px solid ${colors.secundary};
   height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #6e7d9d;
-  padding: 8px 16px;
+  color: ${colors.secundary};
+  padding: ${layout.gapSmall}px ${layout.gap}px;
 
   svg {
-    margin-right: 8px;
+    margin-right: ${layout.gapSmall}px;
   }
-  
 `;
 export const OrderAll = styled.button`
-  color: #6E7D9D;
-  margin-bottom: 32px;
+  color: ${colors.secundary};
+  margin-bottom: ${layout.gapLarge}px;
   background: none;
   border: none;
   text-decoration: underline;
